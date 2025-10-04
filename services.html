@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hair Services Pricing | Get Gorgeous</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/pricing.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="index.html">
+                <img src="assets/logo.png" alt="Get Gorgeous" class="brand-logo" />
+            </a>
+            <nav class="primary-nav">
+                <a href="about.html">About Us</a>
+                <div class="dropdown">
+                    <a href="services.html" class="dropdown-toggle" aria-current="page">Services</a>
+                    <div class="dropdown-menu">
+                        <a href="services.html" class="active">Hair Services</a>
+                        <a href="hair-extensions.html">Hair Extensions</a>
+                        <a href="skin-services.html">Skin Services</a>
+                        <a href="makeup-services.html">Makeup Services</a>
+                    </div>
+                </div>
+                <a href="stylists.html">Stylist Profiles</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a class="btn btn-primary" href="https://getgorgeous.fivease.com/online/bookme" target="_blank">Book an Appointment</a>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation Menu -->
+        <nav class="mobile-nav">
+            <div class="mobile-nav-content">
+                <a href="about.html" class="mobile-nav-link">About Us</a>
+                <div class="mobile-nav-section">
+                    <a href="services.html" class="mobile-nav-link mobile-nav-main">Services</a>
+                    <div class="mobile-nav-submenu">
+                        <a href="services.html" class="mobile-nav-sublink">Hair Services</a>
+                        <a href="hair-extensions.html" class="mobile-nav-sublink">Hair Extensions</a>
+                        <a href="skin-services.html" class="mobile-nav-sublink">Skin Services</a>
+                        <a href="makeup-services.html" class="mobile-nav-sublink">Makeup Services</a>
+                    </div>
+                </div>
+                <a href="stylists.html" class="mobile-nav-link">Stylist Profiles</a>
+                <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+                <a href="https://getgorgeous.fivease.com/online/bookme" class="mobile-nav-btn" target="_blank">Book an Appointment</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pricing-main">
+        <div class="container">
+            <div class="pricing-header">
+                <h1>Hair Services Pricing</h1>
+                <p>Transparent pricing for all our professional hair services. Find the perfect treatment for your hair goals and budget.</p>
+                
+                <div class="pricing-controls">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Search services..." />
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="filter-tabs">
+                        <button class="filter-btn active" data-filter="all">All Services</button>
+                        <button class="filter-btn" data-filter="cuts">Cuts</button>
+                        <button class="filter-btn" data-filter="styles">Styles</button>
+                        <button class="filter-btn" data-filter="treatments">Treatments</button>
+                        <button class="filter-btn" data-filter="chemical">Chemical</button>
+                        <button class="filter-btn" data-filter="color">Color</button>
+                        <button class="filter-btn" data-filter="braids">Braids</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-grid" id="pricingGrid">
+                <!-- Haircuts Section -->
+                <div class="pricing-section" data-category="cuts">
+                    <h2 class="section-title">Haircuts</h2>
+                    <div class="pricing-cards">
+                        <div class="pricing-card" data-service="detailed-haircut">
+                            <div class="card-header">
+                                <h3>Detailed Haircut</h3>
+                                <div class="price">$57+</div>
+                            </div>
+                            <p>Comprehensive cut with consultation, wash, and styling</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="basic-haircut">
+                            <div class="card-header">
+                                <h3>Basic Haircut</h3>
+                                <div class="price">$40+</div>
+                            </div>
+                            <p>Standard cut with wash and basic styling</p>
+                            <div class="note">+$15 with wash added</div>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="clipper-cut">
+                            <div class="card-header">
+                                <h3>Basic Clipper Cut</h3>
+                                <div class="price">$33+</div>
+                            </div>
+                            <p>Quick clipper cut for shorter styles</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="dry-trim">
+                            <div class="card-header">
+                                <h3>Dry Trim</h3>
+                                <div class="price">$31+</div>
+                            </div>
+                            <p>Quick trim without wash</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="haircut-addon">
+                            <div class="card-header">
+                                <h3>Haircut Add On</h3>
+                                <div class="price">$20+</div>
+                            </div>
+                            <p>Additional styling or finishing touches</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shampoo Styles Section -->
+                <div class="pricing-section" data-category="styles">
+                    <h2 class="section-title">Shampoo Styles</h2>
+                    <div class="pricing-cards">
+                        <div class="pricing-card" data-service="natural-protective">
+                            <div class="card-header">
+                                <h3>Natural Protective Style</h3>
+                                <div class="price">$80+</div>
+                            </div>
+                            <p>Protective styling for natural hair</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="natural">
+                            <div class="card-header">
+                                <h3>Natural</h3>
+                                <div class="price">$88+</div>
+                            </div>
+                            <p>Natural hair styling and care</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="relaxed">
+                            <div class="card-header">
+                                <h3>Relaxed</h3>
+                                <div class="price">$77+</div>
+                            </div>
+                            <p>Styling for relaxed hair</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="shampoo-blowdry">
+                            <div class="card-header">
+                                <h3>Shampoo/Blow Dry</h3>
+                                <div class="price">$52+</div>
+                            </div>
+                            <p>Wash and blow dry service</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="detangle">
+                            <div class="card-header">
+                                <h3>Detangle</h3>
+                                <div class="price">$55+</div>
+                            </div>
+                            <p>Professional detangling (first 1/2 hr)</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="starting-locs">
+                            <div class="card-header">
+                                <h3>Starting Locs</h3>
+                                <div class="price">$180+</div>
+                            </div>
+                            <p>Initial loc installation and styling</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="loc-retwist">
+                            <div class="card-header">
+                                <h3>Loc Retwist</h3>
+                                <div class="price">$93+</div>
+                            </div>
+                            <p>Maintenance retwist for existing locs</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="finger-waves">
+                            <div class="card-header">
+                                <h3>Finger Waves</h3>
+                                <div class="price">$85+</div>
+                            </div>
+                            <p>Classic finger wave styling</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Treatments Section -->
+                <div class="pricing-section" data-category="treatments">
+                    <h2 class="section-title">Treatments</h2>
+                    <div class="pricing-cards">
+                        <div class="pricing-card" data-service="deep-condition">
+                            <div class="card-header">
+                                <h3>Basic Deep Condition</h3>
+                                <div class="price">$35+</div>
+                            </div>
+                            <p>Intensive conditioning treatment</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="olaplex">
+                            <div class="card-header">
+                                <h3>Olaplex</h3>
+                                <div class="price">$52+</div>
+                            </div>
+                            <p>Professional bond building treatment</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="steam-treatment">
+                            <div class="card-header">
+                                <h3>Steam Treatment</h3>
+                                <div class="price">$30+</div>
+                            </div>
+                            <p>Steam therapy for hair and scalp</p>
+                            <div class="note">$2 per additional minute - excellent for skin too!</div>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="keratin">
+                            <div class="card-header">
+                                <h3>Keratin</h3>
+                                <div class="price">$275+</div>
+                            </div>
+                            <p>Professional keratin smoothing treatment</p>
+                            <div class="note">+$30 for additional bowl used</div>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="detox-treatment">
+                            <div class="card-header">
+                                <h3>Detox Treatment</h3>
+                                <div class="price">$20+</div>
+                            </div>
+                            <p>Hair and scalp detoxification</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chemical Services Section -->
+                <div class="pricing-section" data-category="chemical">
+                    <h2 class="section-title">Chemical Services</h2>
+                    <div class="pricing-cards">
+                        <div class="pricing-card" data-service="relaxer-retouch">
+                            <div class="card-header">
+                                <h3>Relaxer Retouch</h3>
+                                <div class="price">$119+</div>
+                            </div>
+                            <p>Touch-up relaxer application</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="virgin-relaxer">
+                            <div class="card-header">
+                                <h3>Virgin Relaxer</h3>
+                                <div class="price">$140+</div>
+                            </div>
+                            <p>First-time relaxer application</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="texturizer">
+                            <div class="card-header">
+                                <h3>Texturizer</h3>
+                                <div class="price">$90+</div>
+                            </div>
+                            <p>Gentle texturizing treatment</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="wave-by-design-short">
+                            <div class="card-header">
+                                <h3>Wave By Design (Short)</h3>
+                                <div class="price">$155+</div>
+                            </div>
+                            <p>Custom wave pattern for shorter hair</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="wave-by-design-long">
+                            <div class="card-header">
+                                <h3>Wave By Design (Long)</h3>
+                                <div class="price">$185+</div>
+                            </div>
+                            <p>Custom wave pattern for longer hair</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="wave-by-design-virgin">
+                            <div class="card-header">
+                                <h3>Wave By Design (Virgin)</h3>
+                                <div class="price">$205+</div>
+                            </div>
+                            <p>Custom wave pattern for virgin hair</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="perm">
+                            <div class="card-header">
+                                <h3>Perm</h3>
+                                <div class="price">$120+</div>
+                            </div>
+                            <p>Traditional perm service</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Color Services Section -->
+                <div class="pricing-section" data-category="color">
+                    <h2 class="section-title">Color Services</h2>
+                    <div class="pricing-cards">
+                        <div class="pricing-card" data-service="partial-highlights">
+                            <div class="card-header">
+                                <h3>Partial Highlights</h3>
+                                <div class="price">$145+</div>
+                            </div>
+                            <p>Highlighting select sections</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="full-foil-highlights">
+                            <div class="card-header">
+                                <h3>Full Foil Highlights</h3>
+                                <div class="price">$250+</div>
+                            </div>
+                            <p>Complete foil highlighting service</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="rinse-temporary">
+                            <div class="card-header">
+                                <h3>Rinse/Temporary</h3>
+                                <div class="price">$36+</div>
+                            </div>
+                            <p>Temporary color rinse application</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="semi-demi-addon">
+                            <div class="card-header">
+                                <h3>Semi/Demi ADD ON</h3>
+                                <div class="price">$45+</div>
+                            </div>
+                            <p>Additional semi or demi color service</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="root-touchup">
+                            <div class="card-header">
+                                <h3>Root Touchup</h3>
+                                <div class="price">$87+</div>
+                            </div>
+                            <p>Root color touch-up service</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="allover">
+                            <div class="card-header">
+                                <h3>Allover</h3>
+                                <div class="price">$100+</div>
+                            </div>
+                            <p>Full head color application</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="add-pigments">
+                            <div class="card-header">
+                                <h3>Add on Pigments</h3>
+                                <div class="price">$31+</div>
+                            </div>
+                            <p>Additional color pigment application</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="bleach">
+                            <div class="card-header">
+                                <h3>Bleach</h3>
+                                <div class="price">$150+</div>
+                            </div>
+                            <p>Professional bleaching service</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Extensions Section -->
+                <div class="pricing-section" data-category="extensions">
+                    <h2 class="section-title">Extensions</h2>
+                    <div class="pricing-cards">
+                        <div class="pricing-card" data-service="clip-tape-ins">
+                            <div class="card-header">
+                                <h3>Clip/Tape Ins</h3>
+                                <div class="price">$185+</div>
+                            </div>
+                            <p>Clip-in or tape-in extension installation</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="extension-takedown">
+                            <div class="card-header">
+                                <h3>Extension Takedown</h3>
+                                <div class="price">$65+</div>
+                            </div>
+                            <p>Professional extension removal</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="sew-in">
+                            <div class="card-header">
+                                <h3>Sew In</h3>
+                                <div class="price">$275+</div>
+                            </div>
+                            <p>Full sew-in extension installation</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="partial-sew-in">
+                            <div class="card-header">
+                                <h3>Partial Sew In</h3>
+                                <div class="price">$180+</div>
+                            </div>
+                            <p>Partial sew-in installation (up to 10 wefts)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box Braids Section -->
+                <div class="pricing-section" data-category="braids">
+                    <h2 class="section-title">Box Braids</h2>
+                    <div class="pricing-cards">
+                        <div class="pricing-card" data-service="box-braids-small">
+                            <div class="card-header">
+                                <h3>Small Box Braids</h3>
+                                <div class="price">$260+</div>
+                            </div>
+                            <p>Small size box braids</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="box-braids-medium">
+                            <div class="card-header">
+                                <h3>Medium Box Braids</h3>
+                                <div class="price">$210+</div>
+                            </div>
+                            <p>Medium size box braids</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="box-braids-large">
+                            <div class="card-header">
+                                <h3>Large Box Braids</h3>
+                                <div class="price">$185+</div>
+                            </div>
+                            <p>Large size box braids</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="box-braids-xl">
+                            <div class="card-header">
+                                <h3>XL Box Braids</h3>
+                                <div class="price">$150+</div>
+                            </div>
+                            <p>Extra large box braids</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="box-braids-jumbo">
+                            <div class="card-header">
+                                <h3>Jumbo Box Braids</h3>
+                                <div class="price">$130+</div>
+                            </div>
+                            <p>Jumbo size (10 or less)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Knot-less Braids Section -->
+                <div class="pricing-section" data-category="braids">
+                    <h2 class="section-title">Knot-less Braids</h2>
+                    <div class="pricing-cards">
+                        <div class="pricing-card" data-service="knotless-small">
+                            <div class="card-header">
+                                <h3>Small Knot-less</h3>
+                                <div class="price">$360+</div>
+                            </div>
+                            <p>Small knot-less braids</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="knotless-medium">
+                            <div class="card-header">
+                                <h3>Medium Knot-less</h3>
+                                <div class="price">$295+</div>
+                            </div>
+                            <p>Medium knot-less braids</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="knotless-large">
+                            <div class="card-header">
+                                <h3>Large Knot-less</h3>
+                                <div class="price">$235+</div>
+                            </div>
+                            <p>Large knot-less braids</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="knotless-xl">
+                            <div class="card-header">
+                                <h3>XL Knot-less</h3>
+                                <div class="price">$185+</div>
+                            </div>
+                            <p>Extra large knot-less braids</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="knotless-jumbo">
+                            <div class="card-header">
+                                <h3>Jumbo Knot-less</h3>
+                                <div class="price">$140+</div>
+                            </div>
+                            <p>Jumbo size (10 or less)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Passion Twists Section -->
+                <div class="pricing-section" data-category="braids">
+                    <h2 class="section-title">Passion Twists</h2>
+                    <div class="pricing-cards">
+                        <div class="pricing-card" data-service="passion-twists-small">
+                            <div class="card-header">
+                                <h3>Small Passion Twists</h3>
+                                <div class="price">$280+</div>
+                            </div>
+                            <p>Small passion twist style</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="passion-twists-medium">
+                            <div class="card-header">
+                                <h3>Medium Passion Twists</h3>
+                                <div class="price">$270+</div>
+                            </div>
+                            <p>Medium passion twist style</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="passion-twists-large">
+                            <div class="card-header">
+                                <h3>Large Passion Twists</h3>
+                                <div class="price">$230+</div>
+                            </div>
+                            <p>Large passion twist style</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="passion-twists-xl">
+                            <div class="card-header">
+                                <h3>XL Passion Twists</h3>
+                                <div class="price">$160+</div>
+                            </div>
+                            <p>Extra large passion twist style</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kids Braid Styles Section -->
+                <div class="pricing-section" data-category="braids">
+                    <h2 class="section-title">Kids Braid Styles</h2>
+                    <div class="pricing-cards">
+                        <div class="pricing-card" data-service="kids-medium-1">
+                            <div class="card-header">
+                                <h3>Medium Size (1 section)</h3>
+                                <div class="price">$75+</div>
+                            </div>
+                            <p>Single section medium braids</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="kids-medium-2">
+                            <div class="card-header">
+                                <h3>Medium Size (2 sections)</h3>
+                                <div class="price">$100+</div>
+                            </div>
+                            <p>Two section medium braids</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="kids-medium-3">
+                            <div class="card-header">
+                                <h3>Medium Size (3 sections)</h3>
+                                <div class="price">$120+</div>
+                            </div>
+                            <p>Three section medium braids</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="kids-small-1">
+                            <div class="card-header">
+                                <h3>Small Size (1 section)</h3>
+                                <div class="price">$105+</div>
+                            </div>
+                            <p>Single section small braids</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="kids-small-2">
+                            <div class="card-header">
+                                <h3>Small Size (2 sections)</h3>
+                                <div class="price">$140+</div>
+                            </div>
+                            <p>Two section small braids</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="kids-small-3">
+                            <div class="card-header">
+                                <h3>Small Size (3 sections)</h3>
+                                <div class="price">$165+</div>
+                            </div>
+                            <p>Three section small braids</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feed Ins Section -->
+                <div class="pricing-section" data-category="braids">
+                    <h2 class="section-title">Feed Ins</h2>
+                    <div class="pricing-cards">
+                        <div class="pricing-card" data-service="feed-in-2">
+                            <div class="card-header">
+                                <h3>#2 Feed Ins</h3>
+                                <div class="price">$60+</div>
+                            </div>
+                            <p>Size #2 feed-in braids</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="feed-in-4">
+                            <div class="card-header">
+                                <h3>#4 Feed Ins</h3>
+                                <div class="price">$105+</div>
+                            </div>
+                            <p>Size #4 feed-in braids</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="feed-in-6">
+                            <div class="card-header">
+                                <h3>#6 Feed Ins</h3>
+                                <div class="price">$125+</div>
+                            </div>
+                            <p>Size #6 feed-in braids</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="feed-in-8">
+                            <div class="card-header">
+                                <h3>#8+ Feed Ins</h3>
+                                <div class="price">$135+</div>
+                            </div>
+                            <p>Size #8 and larger feed-in braids</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Styles Section -->
+                <div class="pricing-section" data-category="styles">
+                    <h2 class="section-title">Other Styles</h2>
+                    <div class="pricing-cards">
+                        <div class="pricing-card" data-service="lemonade-halfup">
+                            <div class="card-header">
+                                <h3>Lemonade & Half Up</h3>
+                                <div class="price">$100-$210+</div>
+                            </div>
+                            <p>Half down styles in various sizes</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="fulani">
+                            <div class="card-header">
+                                <h3>Fulani</h3>
+                                <div class="price">$105-$240+</div>
+                            </div>
+                            <p>Traditional Fulani braid styles</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="braided-bun">
+                            <div class="card-header">
+                                <h3>Braided Bun</h3>
+                                <div class="price">$105-$190+</div>
+                            </div>
+                            <p>Elegant braided bun styles</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="goddess-locs">
+                            <div class="card-header">
+                                <h3>Goddess Locs</h3>
+                                <div class="price">$230+</div>
+                            </div>
+                            <p>Goddess loc installation</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="faux-locs">
+                            <div class="card-header">
+                                <h3>Faux Locs</h3>
+                                <div class="price">$180+</div>
+                            </div>
+                            <p>Faux loc installation</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="takedown-braids">
+                            <div class="card-header">
+                                <h3>Takedown Braids</h3>
+                                <div class="price">$75+</div>
+                            </div>
+                            <p>Professional braid removal</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="touchup-braids">
+                            <div class="card-header">
+                                <h3>Touch up Braids</h3>
+                                <div class="price">$60+</div>
+                            </div>
+                            <p>Braid maintenance and touch-ups</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-notes">
+                <h3>Important Notes</h3>
+                <ul>
+                    <li>Braid prices will vary depending on complexity of the size & length</li>
+                    <li><strong>HAIR NOT INCLUDED</strong> - Please bring your own hair or purchase from us</li>
+                    <li><strong>ADDITIONAL ADD ON FEES</strong> may apply for extra services</li>
+                    <li>$20 ADD ON SHAMPOO/CONDITION</li>
+                    <li>$40 SHAMPOO/DEEP CONDITION BLOW DRY</li>
+                    <li>(+) Indicates additional bowls used and/or services added $30</li>
+                </ul>
+            </div>
+
+            <div class="pricing-cta">
+                <a href="https://getgorgeous.fivease.com/online/bookme" class="btn btn-primary" target="_blank">Book Your Service</a>
+                <a href="hair-services.html" class="btn btn-outline">View Hair Services</a>
+                <a href="hair-extensions.html" class="btn btn-outline">View Extensions</a>
+                <a href="skin-services.html" class="btn btn-outline">View Skin Services</a>
+                <a href="makeup-services.html" class="btn btn-outline">View Makeup Services</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-brand">
+                        <img src="assets/logo.png" alt="Get Gorgeous" class="footer-logo" />
+                    </div>
+                    <p class="footer-description">Minnesota's premier hair salon specializing in beautiful hair care for women of color. Experience the difference of expert styling and personalized care.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/GetGorgeousSalon/" class="social-link" aria-label="Facebook" target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/getgorgeousmn/" class="social-link" aria-label="Instagram" target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p>© <span id="year"></span> Get Gorgeous. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Search functionality
+        const searchInput = document.getElementById('searchInput');
+        const pricingGrid = document.getElementById('pricingGrid');
+        
+        searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const sections = pricingGrid.querySelectorAll('.pricing-section');
+            
+            sections.forEach(section => {
+                const cards = section.querySelectorAll('.pricing-card');
+                let hasVisibleCards = false;
+                
+                cards.forEach(card => {
+                    const serviceName = card.querySelector('h3').textContent.toLowerCase();
+                    const serviceDesc = card.querySelector('p').textContent.toLowerCase();
+                    
+                    if (serviceName.includes(searchTerm) || serviceDesc.includes(searchTerm)) {
+                        card.style.display = 'block';
+                        hasVisibleCards = true;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                
+                section.style.display = hasVisibleCards ? 'block' : 'none';
+            });
+        });
+        
+        // Filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                const filter = this.getAttribute('data-filter');
+                const sections = pricingGrid.querySelectorAll('.pricing-section');
+                
+                sections.forEach(section => {
+                    if (filter === 'all' || section.getAttribute('data-category') === filter) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Smooth scrolling for section navigation
+        document.querySelectorAll('.section-title').forEach(title => {
+            title.addEventListener('click', function() {
+                this.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+        
+        // Mobile menu functionality
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const body = document.body;
+        
+        if (mobileMenuToggle && mobileNav) {
+            mobileMenuToggle.addEventListener('click', function() {
+                this.classList.toggle('active');
+                mobileNav.classList.toggle('active');
+                body.classList.toggle('menu-open');
+            });
+            
+            // Close mobile menu when clicking on a link
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link, .mobile-nav-sublink, .mobile-nav-btn');
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenuToggle.classList.remove('active');
+                    mobileNav.classList.remove('active');
+                    body.classList.remove('menu-open');
+                });
+            });
+            
+            // Close mobile menu when clicking outside
+            mobileNav.addEventListener('click', function(e) {
+                if (e.target === mobileNav) {
+                    mobileMenuToggle.classList.remove('active');
+                    mobileNav.classList.remove('active');
+                    body.classList.remove('menu-open');
+                }
+            });
+            
+            // Prevent body scroll when menu is open
+            const style = document.createElement('style');
+            style.textContent = `
+                body.menu-open {
+                    overflow: hidden;
+                }
+            `;
+            document.head.appendChild(style);
+        }
+    </script>
+</body>
+</html>
+
+

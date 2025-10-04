@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skin Services | Get Gorgeous</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/pricing.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="index.html">
+                <img src="assets/logo.png" alt="Get Gorgeous" class="brand-logo" />
+            </a>
+            <nav class="primary-nav">
+                <a href="about.html">About Us</a>
+                <div class="dropdown">
+                    <a href="services.html" class="dropdown-toggle">Services</a>
+                    <div class="dropdown-menu">
+                        <a href="services.html">Hair Services</a>
+                        <a href="hair-extensions.html">Hair Extensions</a>
+                        <a href="skin-services.html" class="active">Skin Services</a>
+                        <a href="makeup-services.html">Makeup Services</a>
+                    </div>
+                </div>
+                <a href="stylists.html">Stylist Profiles</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a class="btn btn-primary" href="https://getgorgeous.fivease.com/online/bookme" target="_blank">Book an Appointment</a>
+        </div>
+    </header>
+
+    <main class="pricing-main">
+        <div class="container">
+            <div class="pricing-header">
+                <h1>Skin Services</h1>
+                <p>Professional skincare treatments designed for melanin-rich skin. Our skilled estheticians provide personalized facials and waxing services to help you achieve healthy, glowing skin.</p>
+                
+                <div class="pricing-controls">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Search services..." />
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="filter-tabs">
+                        <button class="filter-btn active" data-filter="all">All Services</button>
+                        <button class="filter-btn" data-filter="facials">Facials</button>
+                        <button class="filter-btn" data-filter="waxing">Waxing</button>
+                        <button class="filter-btn" data-filter="tints">Tints & Lifts</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-grid" id="pricingGrid">
+                <!-- Facial Waxing Section -->
+                <div class="pricing-section" data-category="waxing">
+                    <h2 class="section-title">Facial Waxing</h2>
+                    <div class="pricing-cards">
+                        <div class="pricing-card" data-service="facial-waxing">
+                            <div class="card-header">
+                                <h3>Facial Waxing</h3>
+                                <div class="price">$18+</div>
+                            </div>
+                            <p>Have some unwanted hair on your face. We could remove hair from your upper lip and chin, sideburns or forehead. Price is for each individual area</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="full-face-wax">
+                            <div class="card-header">
+                                <h3>Full Face Wax</h3>
+                                <div class="price">$60+</div>
+                            </div>
+                            <p>Need more than one or two areas waxed on your face? Get everything done at once for a discount!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Facial Treatments Section -->
+                <div class="pricing-section" data-category="facials">
+                    <h2 class="section-title">Facial Treatments</h2>
+                    <div class="pricing-cards">
+                        <div class="pricing-card" data-service="express-facial">
+                            <div class="card-header">
+                                <h3>Express Facial</h3>
+                                <div class="price">$65+</div>
+                            </div>
+                            <p>Don't have all day to get gorgeous? Stop in for an express facial with our skilled esthetician and leave with your skin refreshed!</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="full-facial">
+                            <div class="card-header">
+                                <h3>Full Facial</h3>
+                                <div class="price">$110+</div>
+                            </div>
+                            <p>Let our skilled esthetician craft a relaxing and rejuvenating facial based around your skin and its unique needs.</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="mens-facial">
+                            <div class="card-header">
+                                <h3>Men's Facial</h3>
+                                <div class="price">$70+</div>
+                            </div>
+                            <p>Gents, don't let anything stand between you and great skin! Schedule your facial for a confidence boosting and relaxing experience!</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="acne-facial">
+                            <div class="card-header">
+                                <h3>Acne Facial</h3>
+                                <div class="price">$105+</div>
+                            </div>
+                            <p>Struggling with acne? We've all been there! Let our esthetician map your skin, help identify possible triggers, and get your skin on the way to a fresh new start.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tints & Lifts Section -->
+                <div class="pricing-section" data-category="tints">
+                    <h2 class="section-title">Tints & Lifts</h2>
+                    <div class="pricing-cards">
+                        <div class="pricing-card" data-service="brow-tint">
+                            <div class="card-header">
+                                <h3>Brow Tint</h3>
+                                <div class="price">$45+</div>
+                            </div>
+                            <p>Enhance your natural brow color with professional tinting for a fuller, more defined look.</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="lash-tint">
+                            <div class="card-header">
+                                <h3>Lash Tint</h3>
+                                <div class="price">$45+</div>
+                            </div>
+                            <p>Darken and define your lashes with professional tinting for a natural, mascara-free look.</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="lash-brow-combo">
+                            <div class="card-header">
+                                <h3>Lash & Brow Combo</h3>
+                                <div class="price">$45+</div>
+                            </div>
+                            <p>Get both lash and brow tinting together for a complete eye enhancement treatment.</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="lash-lift">
+                            <div class="card-header">
+                                <h3>Lash Lift</h3>
+                                <div class="price">$45+</div>
+                            </div>
+                            <p>Lift and curl your natural lashes for a wide-eyed, mascara-free look that lasts 6-8 weeks.</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="lash-lift-tint">
+                            <div class="card-header">
+                                <h3>Lash Lift & Tint</h3>
+                                <div class="price">$45+</div>
+                            </div>
+                            <p>Combine lash lift with tinting for maximum impact - lifted, curled, and darkened lashes.</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="lash-lift-combo">
+                            <div class="card-header">
+                                <h3>Lash Lift with Brow & Lash Combo</h3>
+                                <div class="price">$45+</div>
+                            </div>
+                            <p>Complete eye enhancement with lash lift, lash tint, and brow tint for the ultimate eye treatment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-notes">
+                <h3>Important Notes</h3>
+                <ul>
+                    <li>All facial treatments are customized to your skin type and concerns</li>
+                    <li>Waxing services are priced per individual area - full face wax offers better value</li>
+                    <li>Lash lifts and tints typically last 6-8 weeks</li>
+                    <li>Consultation recommended for first-time facial clients</li>
+                    <li>Please arrive with clean skin for facial treatments</li>
+                </ul>
+            </div>
+
+            <div class="pricing-cta">
+                <a href="https://getgorgeous.fivease.com/online/bookme" class="btn btn-primary" target="_blank">Book Your Service</a>
+                <a href="services.html" class="btn btn-outline">View Hair Services</a>
+                <a href="hair-extensions.html" class="btn btn-outline">View Hair Extensions</a>
+                <a href="makeup-services.html" class="btn btn-outline">View Makeup Services</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Get Gorgeous. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Search functionality
+        const searchInput = document.getElementById('searchInput');
+        const pricingGrid = document.getElementById('pricingGrid');
+        
+        searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const sections = pricingGrid.querySelectorAll('.pricing-section');
+            
+            sections.forEach(section => {
+                const cards = section.querySelectorAll('.pricing-card');
+                let hasVisibleCards = false;
+                
+                cards.forEach(card => {
+                    const serviceName = card.querySelector('h3').textContent.toLowerCase();
+                    const serviceDesc = card.querySelector('p').textContent.toLowerCase();
+                    
+                    if (serviceName.includes(searchTerm) || serviceDesc.includes(searchTerm)) {
+                        card.style.display = 'block';
+                        hasVisibleCards = true;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                
+                section.style.display = hasVisibleCards ? 'block' : 'none';
+            });
+        });
+        
+        // Filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                const filter = this.getAttribute('data-filter');
+                const sections = pricingGrid.querySelectorAll('.pricing-section');
+                
+                sections.forEach(section => {
+                    if (filter === 'all' || section.getAttribute('data-category') === filter) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Smooth scrolling for section navigation
+        document.querySelectorAll('.section-title').forEach(title => {
+            title.addEventListener('click', function() {
+                this.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+</body>
+</html>

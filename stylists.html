@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stylist Profiles | Get Gorgeous</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="index.html">
+                <img src="assets/logo.png" alt="Get Gorgeous" class="brand-logo" />
+            </a>
+            <nav class="primary-nav">
+                <a href="about.html">About Us</a>
+                <div class="dropdown">
+                    <a href="services.html" class="dropdown-toggle">Services</a>
+                    <div class="dropdown-menu">
+                        <a href="services.html">Hair Services</a>
+                        <a href="hair-extensions.html">Hair Extensions</a>
+                        <a href="skin-services.html">Skin Services</a>
+                        <a href="makeup-services.html">Makeup Services</a>
+                    </div>
+                </div>
+                <a href="stylists.html" aria-current="page">Stylist Profiles</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a class="btn btn-primary" href="https://getgorgeous.fivease.com/online/bookme" target="_blank">Book an Appointment</a>
+        </div>
+    </header>
+
+    <main class="container" style="padding:64px 24px; max-width:1000px;">
+        <h1>Meet Our Stylists</h1>
+        <p>Profiles coming soon. Each of our stylists specializes in healthy hair care and protective styling.</p>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Get Gorgeous. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+

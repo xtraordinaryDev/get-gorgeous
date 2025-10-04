@@ -1,0 +1,420 @@
+/* Pricing Page Styles */
+.pricing-main {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  min-height: 100vh;
+  padding: 40px 0;
+  color: white;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.pricing-header h1 {
+  font-size: clamp(36px, 6vw, 48px);
+  font-weight: 800;
+  margin: 0 0 20px 0;
+  background: linear-gradient(135deg, var(--brand), var(--brand-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.pricing-header p {
+  font-size: clamp(16px, 2vw, 20px);
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 0 40px 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pricing-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.search-box {
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 16px 50px 16px 20px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.search-box input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: var(--brand);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+}
+
+.search-box svg {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.filter-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: 12px 24px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.filter-btn:hover {
+  border-color: var(--brand);
+  background: rgba(255, 105, 180, 0.2);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  border-color: var(--brand);
+  background: linear-gradient(135deg, var(--brand), var(--brand-secondary));
+  color: white;
+  box-shadow: 0 4px 20px rgba(255, 105, 180, 0.4);
+}
+
+.pricing-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.pricing-section {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.pricing-section:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0 0 30px 0;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.section-title:hover {
+  color: var(--brand);
+  transform: scale(1.05);
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(135deg, var(--brand), var(--brand-secondary));
+  border-radius: 2px;
+}
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.pricing-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.pricing-card:hover::before {
+  left: 100%;
+}
+
+.pricing-card:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--brand);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(255, 105, 180, 0.3);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.card-header h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  flex: 1;
+  line-height: 1.3;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--brand);
+  margin-left: 16px;
+  white-space: nowrap;
+  text-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+}
+
+.pricing-card p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 0 12px 0;
+  line-height: 1.5;
+}
+
+.note {
+  font-size: 12px;
+  color: var(--brand-secondary);
+  font-style: italic;
+  margin-top: 8px;
+  padding: 8px 12px;
+  background: rgba(50, 205, 50, 0.1);
+  border-radius: 8px;
+  border-left: 3px solid var(--brand-secondary);
+}
+
+.pricing-notes {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px;
+  margin: 60px 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pricing-notes h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--brand);
+  margin: 0 0 24px 0;
+  text-align: center;
+}
+
+.pricing-notes ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pricing-notes li {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 12px;
+  padding-left: 24px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.pricing-notes li::before {
+  content: "💡";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.pricing-notes strong {
+  color: var(--brand);
+  font-weight: 700;
+}
+
+.pricing-cta {
+  text-align: center;
+  margin-top: 60px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Animations */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pricing-section {
+  animation: slideInUp 0.6s ease-out;
+}
+
+.pricing-section:nth-child(1) { animation-delay: 0.1s; }
+.pricing-section:nth-child(2) { animation-delay: 0.2s; }
+.pricing-section:nth-child(3) { animation-delay: 0.3s; }
+.pricing-section:nth-child(4) { animation-delay: 0.4s; }
+.pricing-section:nth-child(5) { animation-delay: 0.5s; }
+.pricing-section:nth-child(6) { animation-delay: 0.6s; }
+.pricing-section:nth-child(7) { animation-delay: 0.7s; }
+.pricing-section:nth-child(8) { animation-delay: 0.8s; }
+.pricing-section:nth-child(9) { animation-delay: 0.9s; }
+.pricing-section:nth-child(10) { animation-delay: 1.0s; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pricing-main {
+    padding: 20px 0;
+  }
+  
+  .pricing-section {
+    padding: 24px;
+    margin: 0 16px;
+  }
+  
+  .pricing-cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .pricing-card {
+    padding: 20px;
+  }
+  
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .price {
+    margin-left: 0;
+    font-size: 20px;
+  }
+  
+  .filter-tabs {
+    gap: 6px;
+  }
+  
+  .filter-btn {
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+  
+  .pricing-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pricing-cta .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-header h1 {
+    font-size: 28px;
+  }
+  
+  .pricing-header p {
+    font-size: 16px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+  }
+  
+  .pricing-notes {
+    padding: 24px;
+  }
+  
+  .pricing-notes li {
+    font-size: 14px;
+  }
+}
+
+/* Loading Animation */
+.pricing-card {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Staggered animation for cards */
+.pricing-card:nth-child(1) { animation-delay: 0.1s; }
+.pricing-card:nth-child(2) { animation-delay: 0.2s; }
+.pricing-card:nth-child(3) { animation-delay: 0.3s; }
+.pricing-card:nth-child(4) { animation-delay: 0.4s; }
+.pricing-card:nth-child(5) { animation-delay: 0.5s; }
+.pricing-card:nth-child(6) { animation-delay: 0.6s; }
+.pricing-card:nth-child(7) { animation-delay: 0.7s; }
+.pricing-card:nth-child(8) { animation-delay: 0.8s; }

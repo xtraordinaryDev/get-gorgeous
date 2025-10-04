@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hair Extensions & Braids | Get Gorgeous</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/pricing.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="index.html">
+                <img src="assets/logo.png" alt="Get Gorgeous" class="brand-logo" />
+            </a>
+            <nav class="primary-nav">
+                <a href="about.html">About Us</a>
+                <div class="dropdown">
+                    <a href="services.html" class="dropdown-toggle">Services</a>
+                    <div class="dropdown-menu">
+                        <a href="services.html">Hair Services</a>
+                        <a href="hair-extensions.html" class="active">Hair Extensions</a>
+                        <a href="skin-services.html">Skin Services</a>
+                        <a href="makeup-services.html">Makeup Services</a>
+                    </div>
+                </div>
+                <a href="stylists.html">Stylist Profiles</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a class="btn btn-primary" href="https://getgorgeous.fivease.com/online/bookme" target="_blank">Book an Appointment</a>
+        </div>
+    </header>
+
+    <main class="pricing-main">
+        <div class="container">
+            <div class="pricing-header">
+                <h1>Hair Extensions & Braids</h1>
+                <p>Professional extension and braiding services to add length, volume, and style to your hair. We offer a variety of methods to suit your lifestyle and hair goals.</p>
+                
+                <div class="pricing-controls">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Search services..." />
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="filter-tabs">
+                        <button class="filter-btn active" data-filter="all">All Services</button>
+                        <button class="filter-btn" data-filter="extensions">Extensions</button>
+                        <button class="filter-btn" data-filter="braids">Braids</button>
+                        <button class="filter-btn" data-filter="twists">Twists & Locs</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-grid" id="pricingGrid">
+                <!-- Sew-In Extensions Section -->
+                <div class="pricing-section" data-category="extensions">
+                    <h2 class="section-title">Sew-In Extensions</h2>
+                    <div class="pricing-cards">
+                        <div class="pricing-card" data-service="sew-in">
+                            <div class="card-header">
+                                <h3>Sew-In Extensions</h3>
+                                <div class="price">$275+</div>
+                            </div>
+                            <p>Also called a weave. This service includes a wash blow dry braids. Sew-in cut and simple style. We do not include hair in the price. Feel free to bring in your own hair. Otherwise, we can arrange to order hair for you through our preferred supplier. Please book appointments early as it takes time for the hair to ship to us since this service takes several hours. We recommend booking in advance.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Crochet Braids Section -->
+                <div class="pricing-section" data-category="braids">
+                    <h2 class="section-title">Crochet Braids</h2>
+                    <div class="pricing-cards">
+                        <div class="pricing-card" data-service="crochet-braids">
+                            <div class="card-header">
+                                <h3>Crochet Braids</h3>
+                                <div class="price">$175+</div>
+                            </div>
+                            <p>Another great protective style to maintain your hair while rocking some fun hair on top! Generally it's more common to use fuller natural looking textures, but you can chat with your stylist on options to get the look you want! Partial Crochet prices will vary.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Twists or Locs Section -->
+                <div class="pricing-section" data-category="twists">
+                    <h2 class="section-title">Twists or Locs</h2>
+                    <div class="pricing-cards">
+                        <div class="pricing-card" data-service="twists-locs">
+                            <div class="card-header">
+                                <h3>Twists or Locs</h3>
+                                <div class="price">$180+</div>
+                            </div>
+                            <p>Includes Havana, Marley, or Kinky Twists (medium or large) and Faux or Goddess Locs! We do not provide the hair for these services, but we love to help provide a recommendation since these services take several hours. It's best to schedule in advance.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Braid Styles Section -->
+                <div class="pricing-section" data-category="braids">
+                    <h2 class="section-title">Braid Styles</h2>
+                    <div class="pricing-cards">
+                        <div class="pricing-card" data-service="braid-styles">
+                            <div class="card-header">
+                                <h3>Braid Styles</h3>
+                                <div class="price">$75+</div>
+                            </div>
+                            <p>Pricing depends on the complexity of the style desired in the condition and length of your hair. Chat with the Braider to book your appointment!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box Braids Section -->
+                <div class="pricing-section" data-category="braids">
+                    <h2 class="section-title">Box Braids</h2>
+                    <div class="pricing-cards">
+                        <div class="pricing-card" data-service="box-braids">
+                            <div class="card-header">
+                                <h3>Box Braids</h3>
+                                <div class="price">$140+</div>
+                            </div>
+                            <p>This is a great protective style with iconic box or square shape parts/dividers for the braids. This style generally includes hair for length and thickness. Chat with one of our Braiders for more details, as this is a long service, it's best to book in advance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-notes">
+                <h3>Important Notes</h3>
+                <ul>
+                    <li>We do not provide hair for most services - please bring your own or we can help arrange ordering</li>
+                    <li>Extension and braiding services take several hours - please book in advance</li>
+                    <li>Pricing varies based on hair length, condition, and style complexity</li>
+                    <li>Consultation recommended for first-time clients</li>
+                    <li>Maintenance appointments available for ongoing care</li>
+                </ul>
+            </div>
+
+            <div class="pricing-cta">
+                <a href="https://getgorgeous.fivease.com/online/bookme" class="btn btn-primary" target="_blank">Book Your Service</a>
+                <a href="services.html" class="btn btn-outline">View Hair Services</a>
+                <a href="skin-services.html" class="btn btn-outline">View Skin Services</a>
+                <a href="makeup-services.html" class="btn btn-outline">View Makeup Services</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-brand">
+                        <img src="assets/logo.png" alt="Get Gorgeous" class="footer-logo" />
+                    </div>
+                    <p class="footer-description">Minnesota's premier hair salon specializing in beautiful hair care for women of color. Experience the difference of expert styling and personalized care.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/GetGorgeousSalon/" class="social-link" aria-label="Facebook" target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/getgorgeousmn/" class="social-link" aria-label="Instagram" target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p>© <span id="year"></span> Get Gorgeous. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Search functionality
+        const searchInput = document.getElementById('searchInput');
+        const pricingGrid = document.getElementById('pricingGrid');
+        
+        searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const sections = pricingGrid.querySelectorAll('.pricing-section');
+            
+            sections.forEach(section => {
+                const cards = section.querySelectorAll('.pricing-card');
+                let hasVisibleCards = false;
+                
+                cards.forEach(card => {
+                    const serviceName = card.querySelector('h3').textContent.toLowerCase();
+                    const serviceDesc = card.querySelector('p').textContent.toLowerCase();
+                    
+                    if (serviceName.includes(searchTerm) || serviceDesc.includes(searchTerm)) {
+                        card.style.display = 'block';
+                        hasVisibleCards = true;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                
+                section.style.display = hasVisibleCards ? 'block' : 'none';
+            });
+        });
+        
+        // Filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                const filter = this.getAttribute('data-filter');
+                const sections = pricingGrid.querySelectorAll('.pricing-section');
+                
+                sections.forEach(section => {
+                    if (filter === 'all' || section.getAttribute('data-category') === filter) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Smooth scrolling for section navigation
+        document.querySelectorAll('.section-title').forEach(title => {
+            title.addEventListener('click', function() {
+                this.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+</body>
+</html>

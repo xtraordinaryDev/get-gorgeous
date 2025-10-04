@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Makeup Services | Get Gorgeous</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/pricing.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="index.html">
+                <img src="assets/logo.png" alt="Get Gorgeous" class="brand-logo" />
+            </a>
+            <nav class="primary-nav">
+                <a href="about.html">About Us</a>
+                <div class="dropdown">
+                    <a href="services.html" class="dropdown-toggle">Services</a>
+                    <div class="dropdown-menu">
+                        <a href="services.html">Hair Services</a>
+                        <a href="hair-extensions.html">Hair Extensions</a>
+                        <a href="skin-services.html">Skin Services</a>
+                        <a href="makeup-services.html" class="active">Makeup Services</a>
+                    </div>
+                </div>
+                <a href="stylists.html">Stylist Profiles</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a class="btn btn-primary" href="https://getgorgeous.fivease.com/online/bookme" target="_blank">Book an Appointment</a>
+        </div>
+    </header>
+
+    <main class="pricing-main">
+        <div class="container">
+            <div class="pricing-header">
+                <h1>Makeup Services</h1>
+                <p>Professional makeup application for all occasions, with expertise in diverse skin tones. Our skilled artists create stunning looks for events, special occasions, and everyday glamour.</p>
+                
+                <div class="pricing-controls">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Search services..." />
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="filter-tabs">
+                        <button class="filter-btn active" data-filter="all">All Services</button>
+                        <button class="filter-btn" data-filter="application">Makeup Application</button>
+                        <button class="filter-btn" data-filter="lashes">Lash Services</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-grid" id="pricingGrid">
+                <!-- Makeup Application Section -->
+                <div class="pricing-section" data-category="application">
+                    <h2 class="section-title">Makeup Application</h2>
+                    <div class="pricing-cards">
+                        <div class="pricing-card" data-service="full-makeup">
+                            <div class="card-header">
+                                <h3>Full Makeup Application</h3>
+                                <div class="price">$80+</div>
+                            </div>
+                            <p>Full makeup application, including contouring eyes and lips. Great for events for fab night out!</p>
+                        </div>
+                        
+                        <div class="pricing-card" data-service="partial-makeup">
+                            <div class="card-header">
+                                <h3>Partial Makeup Application</h3>
+                                <div class="price">$70+</div>
+                            </div>
+                            <p>Eyes, lips and minimal foundation are included. Great for a night out or special event!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lash Services Section -->
+                <div class="pricing-section" data-category="lashes">
+                    <h2 class="section-title">Lash Services</h2>
+                    <div class="pricing-cards">
+                        <div class="pricing-card" data-service="eyelash-strip">
+                            <div class="card-header">
+                                <h3>Eyelash Strip Application</h3>
+                                <div class="price">$22+</div>
+                            </div>
+                            <p>One. The bold look but uncomfortable applying your lashes? Let us help!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-notes">
+                <h3>Important Notes</h3>
+                <ul>
+                    <li>All makeup services include professional color matching for your skin tone</li>
+                    <li>Please arrive with clean, moisturized skin for best results</li>
+                    <li>Full makeup application includes complete face, eyes, and lips</li>
+                    <li>Partial application focuses on eyes and lips with minimal foundation</li>
+                    <li>Eyelash strip application includes professional placement and trimming</li>
+                    <li>Consultation available for special events and bridal makeup</li>
+                </ul>
+            </div>
+
+            <div class="pricing-cta">
+                <a href="https://getgorgeous.fivease.com/online/bookme" class="btn btn-primary" target="_blank">Book Your Service</a>
+                <a href="services.html" class="btn btn-outline">View Hair Services</a>
+                <a href="hair-extensions.html" class="btn btn-outline">View Hair Extensions</a>
+                <a href="skin-services.html" class="btn btn-outline">View Skin Services</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Get Gorgeous. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Search functionality
+        const searchInput = document.getElementById('searchInput');
+        const pricingGrid = document.getElementById('pricingGrid');
+        
+        searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const sections = pricingGrid.querySelectorAll('.pricing-section');
+            
+            sections.forEach(section => {
+                const cards = section.querySelectorAll('.pricing-card');
+                let hasVisibleCards = false;
+                
+                cards.forEach(card => {
+                    const serviceName = card.querySelector('h3').textContent.toLowerCase();
+                    const serviceDesc = card.querySelector('p').textContent.toLowerCase();
+                    
+                    if (serviceName.includes(searchTerm) || serviceDesc.includes(searchTerm)) {
+                        card.style.display = 'block';
+                        hasVisibleCards = true;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                
+                section.style.display = hasVisibleCards ? 'block' : 'none';
+            });
+        });
+        
+        // Filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                const filter = this.getAttribute('data-filter');
+                const sections = pricingGrid.querySelectorAll('.pricing-section');
+                
+                sections.forEach(section => {
+                    if (filter === 'all' || section.getAttribute('data-category') === filter) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Smooth scrolling for section navigation
+        document.querySelectorAll('.section-title').forEach(title => {
+            title.addEventListener('click', function() {
+                this.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+</body>
+</html>
