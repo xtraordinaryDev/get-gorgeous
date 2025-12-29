@@ -31,12 +31,116 @@
                 <a href="contact.html">Contact</a>
             </nav>
             <a class="btn btn-primary" href="https://getgorgeous.fivease.com/online/bookme" target="_blank">Book an Appointment</a>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
         </div>
+        
+        <!-- Mobile Navigation Menu -->
+        <nav class="mobile-nav">
+            <div class="mobile-nav-content">
+                <a href="about.html" class="mobile-nav-link">About Us</a>
+                <div class="mobile-nav-section">
+                    <a href="services.html" class="mobile-nav-link mobile-nav-main">Services</a>
+                    <div class="mobile-nav-submenu">
+                        <a href="services.html" class="mobile-nav-sublink">Hair Services</a>
+                        <a href="hair-extensions.html" class="mobile-nav-sublink">Hair Extensions</a>
+                        <a href="skin-services.html" class="mobile-nav-sublink">Skin Services</a>
+                        <a href="makeup-services.html" class="mobile-nav-sublink">Makeup Services</a>
+                    </div>
+                </div>
+                <a href="stylists.html" class="mobile-nav-link">Stylist Profiles</a>
+                <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+                <a href="https://getgorgeous.fivease.com/online/bookme" class="mobile-nav-btn" target="_blank">Book an Appointment</a>
+            </div>
+        </nav>
     </header>
 
-    <main class="container" style="padding:64px 24px; max-width:1100px;">
-        <h1>Gallery</h1>
-        <p>Our latest looks and natural hair transformations. Photos coming soon.</p>
+    <main class="container" style="padding:64px 24px; max-width:1400px;">
+        <div style="text-align: center; margin-bottom: 48px;">
+            <h1 style="font-size: clamp(32px, 5vw, 48px); font-weight: 800; margin: 0 0 16px 0; letter-spacing: 1px;">Gallery</h1>
+            <p style="font-size: clamp(16px, 2vw, 20px); color: var(--muted); margin: 0; max-width: 600px; margin-left: auto; margin-right: auto;">Our latest looks and natural hair transformations.</p>
+        </div>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="assets/IMG_3709.jpg" alt="Hair transformation" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+                <img src="assets/IMG_8143.jpg" alt="Hair styling" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+                <img src="assets/IMG_8145.jpg" alt="Hair transformation" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+                <img src="assets/IMG_8147.jpg" alt="Hair styling" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+                <img src="assets/IMG_8155.jpg" alt="Hair transformation" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+                <img src="assets/IMG_8156.jpg" alt="Hair styling" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+                <img src="assets/IMG_8157.jpg" alt="Hair transformation" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+                <img src="assets/IMG_8159.jpg" alt="Hair styling" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+                <img src="assets/IMG_8160.jpg" alt="Hair transformation" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+                <img src="assets/IMG_8170.jpg" alt="Hair styling" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+                <img src="assets/IMG_8171.jpg" alt="Hair transformation" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+                <img src="assets/IMG_8172.jpg" alt="Hair styling" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+                <img src="assets/IMG_8173.jpg" alt="Hair transformation" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+                <img src="assets/IMG_8174.jpg" alt="Hair styling" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+                <img src="assets/IMG_8177.jpg" alt="Hair transformation" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+                <img src="assets/IMG_8178.jpg" alt="Hair styling" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+                <img src="assets/IMG_8179.jpg" alt="Hair transformation" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+                <img src="assets/IMG_8180.jpg" alt="Hair styling" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+                <img src="assets/IMG_8189.jpg" alt="Hair transformation" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+                <img src="assets/IMG_8190.jpg" alt="Hair styling" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+                <img src="assets/IMG_8191.jpg" alt="Hair transformation" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+                <img src="assets/IMG_8193.jpg" alt="Hair styling" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+                <img src="assets/IMG_8194.jpg" alt="Hair transformation" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+                <img src="assets/IMG_8195.jpg" alt="Hair styling" loading="lazy" />
+            </div>
+        </div>
     </main>
 
     <footer class="site-footer">
@@ -44,7 +148,50 @@
             <p>© <span id="year"></span> Get Gorgeous. All rights reserved.</p>
         </div>
     </footer>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Mobile menu functionality
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const body = document.body;
+        
+        if (mobileMenuToggle && mobileNav) {
+            mobileMenuToggle.addEventListener('click', function() {
+                this.classList.toggle('active');
+                mobileNav.classList.toggle('active');
+                body.classList.toggle('menu-open');
+            });
+            
+            // Close mobile menu when clicking on a link
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link, .mobile-nav-sublink, .mobile-nav-btn');
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenuToggle.classList.remove('active');
+                    mobileNav.classList.remove('active');
+                    body.classList.remove('menu-open');
+                });
+            });
+            
+            // Close mobile menu when clicking outside
+            mobileNav.addEventListener('click', function(e) {
+                if (e.target === mobileNav) {
+                    mobileMenuToggle.classList.remove('active');
+                    mobileNav.classList.remove('active');
+                    body.classList.remove('menu-open');
+                }
+            });
+            
+            // Prevent body scroll when menu is open
+            const style = document.createElement('style');
+            style.textContent = `
+                body.menu-open {
+                    overflow: hidden;
+                }
+            `;
+            document.head.appendChild(style);
+        }
+    </script>
 </body>
 </html>
 
