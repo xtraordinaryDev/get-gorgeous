@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <title>Get Gorgeous | Beautiful Hair for Beautiful Women</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +32,7 @@
                 <a href="gallery.html">Gallery</a>
                 <a href="contact.html">Contact</a>
             </nav>
-            <a class="btn btn-primary" href="https://getgorgeous.fivease.com/online/bookme" target="_blank">Book an Appointment</a>
+            <a class="btn btn-primary" href="https://www.vagaro.com/getgorgeoussalonandspa/book-now" target="_blank">Book an Appointment</a>
             
             <!-- Mobile Menu Button -->
             <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
@@ -56,7 +58,7 @@
                 <a href="stylists.html" class="mobile-nav-link">Stylist Profiles</a>
                 <a href="gallery.html" class="mobile-nav-link">Gallery</a>
                 <a href="contact.html" class="mobile-nav-link">Contact</a>
-                <a href="https://getgorgeous.fivease.com/online/bookme" class="mobile-nav-btn" target="_blank">Book an Appointment</a>
+                <a href="https://www.vagaro.com/getgorgeoussalonandspa/book-now" class="mobile-nav-btn" target="_blank">Book an Appointment</a>
             </div>
         </nav>
     </header>
@@ -65,7 +67,7 @@
         <section class="hero">
             <div class="hero-media" role="img" aria-label="Woman with curly hair styling in mirror"></div>
             <div class="hero-video">
-                <video autoplay muted loop playsinline preload="metadata" poster="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwMCIgaGVpZ2h0PSI2MDAiIHZpZXdCb3g9IjAgMCAxMDAwIDYwMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEwMDAiIGhlaWdodD0iNjAwIiBmaWxsPSIjMWExYTFhIi8+Cjx0ZXh0IHg9IjUwMCIgeT0iMzAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkxvYWRpbmcuLi48L3RleHQ+Cjwvc3ZnPg==">
+                <video autoplay muted loop playsinline webkit-playsinline preload="auto" x-webkit-airplay="allow" poster="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwMCIgaGVpZ2h0PSI2MDAiIHZpZXdCb3g9IjAgMCAxMDAwIDYwMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEwMDAiIGhlaWdodD0iNjAwIiBmaWxsPSIjMWExYTFhIi8+Cjx0ZXh0IHg9IjUwMCIgeT0iMzAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkxvYWRpbmcuLi48L3RleHQ+Cjwvc3ZnPg==">
                     <source src="assets/getgorgeous.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -78,7 +80,7 @@
                 </h1>
                 <p class="hero-subtitle">Specializing in hair care for women of color in Minnesota. Our expert stylists celebrate your natural beauty with personalized treatments and styling.</p>
                 <div class="hero-actions">
-                    <a class="btn btn-primary" href="https://getgorgeous.fivease.com/online/bookme" target="_blank">Book Your Appointment</a>
+                    <a class="btn btn-primary" href="https://www.vagaro.com/getgorgeoussalonandspa/book-now" target="_blank">Book Your Appointment</a>
                     <a class="btn btn-outline" href="services.html">View Our Services</a>
                 </div>
             </div>
@@ -305,7 +307,7 @@
                         <h2 class="booking-title">READY TO TRANSFORM YOUR LOOK?</h2>
                         <p class="booking-description">Book your appointment today and experience the difference of expert care designed specifically for your beautiful textured hair.</p>
                         <div class="booking-buttons">
-                            <a href="https://getgorgeous.fivease.com/online/bookme" class="btn btn-white" target="_blank">Book Appointment</a>
+                            <a href="https://www.vagaro.com/getgorgeoussalonandspa/book-now" class="btn btn-white" target="_blank">Book Appointment</a>
                             <a href="contact.html" class="btn btn-outline-white">Contact Us</a>
                         </div>
                     </div>
@@ -441,6 +443,65 @@
             }
         `;
         document.head.appendChild(style);
+        
+        // iOS/iPhone video compatibility
+        (function() {
+            const video = document.querySelector('.hero-video video');
+            if (!video) return;
+            
+            // Detect iOS
+            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || 
+                         (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+            
+            if (isIOS) {
+                // Force video attributes for iOS
+                video.setAttribute('playsinline', 'true');
+                video.setAttribute('webkit-playsinline', 'true');
+                video.setAttribute('muted', 'true');
+                video.muted = true;
+                
+                // iOS sometimes requires user interaction, so we'll try to play on load
+                const tryPlay = function() {
+                    const playPromise = video.play();
+                    if (playPromise !== undefined) {
+                        playPromise.catch(function(error) {
+                            // Auto-play was prevented, but that's okay for iOS
+                            console.log('Video autoplay prevented:', error);
+                        });
+                    }
+                };
+                
+                // Try to play when video is loaded
+                video.addEventListener('loadedmetadata', tryPlay);
+                video.addEventListener('loadeddata', tryPlay);
+                
+                // Also try on page load
+                if (document.readyState === 'complete') {
+                    tryPlay();
+                } else {
+                    window.addEventListener('load', tryPlay);
+                }
+                
+                // Handle orientation changes on iOS
+                window.addEventListener('orientationchange', function() {
+                    setTimeout(function() {
+                        video.style.width = '100%';
+                        video.style.height = '100%';
+                        tryPlay();
+                    }, 100);
+                });
+            } else {
+                // For non-iOS devices, ensure autoplay works
+                video.addEventListener('loadedmetadata', function() {
+                    const playPromise = video.play();
+                    if (playPromise !== undefined) {
+                        playPromise.catch(function(error) {
+                            console.log('Video autoplay prevented:', error);
+                        });
+                    }
+                });
+            }
+        })();
     </script>
 </body>
 </html>

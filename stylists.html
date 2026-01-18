@@ -8,6 +8,66 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css" />
+    <style>
+        .profile-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+        }
+        .profile-card {
+            background: linear-gradient(135deg, rgba(26, 24, 38, 0.95), rgba(34, 30, 50, 0.95));
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 18px;
+            padding: 24px;
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+            backdrop-filter: blur(6px);
+        }
+        .profile-top {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+        .profile-photo {
+            width: 96px;
+            height: 96px;
+            border-radius: 14px;
+            object-fit: cover;
+            border: 2px solid var(--primary, #b884f8);
+            box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+        }
+        .profile-name {
+            margin: 0 0 4px 0;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .profile-role {
+            margin: 0;
+            color: var(--muted, #c6c6d1);
+            font-weight: 600;
+            letter-spacing: 0.2px;
+        }
+        .profile-bio {
+            margin: 0 0 14px 0;
+            color: var(--muted, #c6c6d1);
+            line-height: 1.65;
+        }
+        .pill-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .pill {
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: rgba(184, 132, 248, 0.14);
+            border: 1px solid rgba(184, 132, 248, 0.35);
+            color: #f5e9ff;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.2px;
+        }
+    </style>
 </head>
 <body>
     <header class="site-header">
@@ -30,13 +90,70 @@
                 <a href="gallery.html">Gallery</a>
                 <a href="contact.html">Contact</a>
             </nav>
-            <a class="btn btn-primary" href="https://getgorgeous.fivease.com/online/bookme" target="_blank">Book an Appointment</a>
+            <a class="btn btn-primary" href="https://www.vagaro.com/getgorgeoussalonandspa/book-now" target="_blank">Book an Appointment</a>
         </div>
     </header>
 
-    <main class="container" style="padding:64px 24px; max-width:1000px;">
-        <h1>Meet Our Stylists</h1>
-        <p>Profiles coming soon. Each of our stylists specializes in healthy hair care and protective styling.</p>
+    <main class="container" style="padding:80px 24px; max-width:1100px;">
+        <div style="text-align:center; margin-bottom:48px;">
+            <h1 style="margin:0 0 12px 0;">Meet Our Stylists</h1>
+            <p style="margin:0; color:var(--muted); font-size:17px;">Textured-hair specialists who blend healthy hair care, artistry, and a welcoming experience.</p>
+        </div>
+
+        <div class="profile-grid">
+            <div class="profile-card">
+                <div class="profile-top">
+                    <img class="profile-photo" src="assets/ilka.jpg" alt="Ilka Bird" />
+                    <div>
+                        <h3 class="profile-name">Ilka Bird</h3>
+                        <p class="profile-role">Owner / Stylist</p>
+                    </div>
+                </div>
+                <p class="profile-bio">Brooklyn-born and style-obsessed, Ilka opened Get Gorgeous in 2007 to create a multicultural salon with family-love vibes. She delights in bringing out natural beauty for clients of all ages in St. Paul’s Historic Rondo neighborhood.</p>
+                <div class="pill-row">
+                    <span class="pill">Silk Press</span>
+                    <span class="pill">Protective Styles</span>
+                    <span class="pill">Healthy Hair Care</span>
+                </div>
+            </div>
+
+            <div class="profile-card">
+                <div class="profile-top">
+                    <img class="profile-photo" src="assets/Justina%27s%20Photo.png" alt="Justina at Get Gorgeous" />
+                    <div>
+                        <h3 class="profile-name">Justina</h3>
+                        <p class="profile-role">Braiding Specialist</p>
+                    </div>
+                </div>
+                <p class="profile-bio">A North Carolina native raised in Georgia and now in Minnesota, Justina has honed the art of braiding since 18. She blends precision technique with a passion for confidence-building, crafting transformative chair experiences.</p>
+                <div class="pill-row">
+                    <span class="pill">Knotless & Box Braids</span>
+                    <span class="pill">Feed-in Styles</span>
+                    <span class="pill">Scalp Care</span>
+                </div>
+            </div>
+
+            <div class="profile-card">
+                <div class="profile-top">
+                    <img class="profile-photo" src="assets/Arthea%20Photo.png" alt="Arthea at Get Gorgeous" />
+                    <div>
+                        <h3 class="profile-name">Arthea</h3>
+                        <p class="profile-role">Junior Stylist</p>
+                    </div>
+                </div>
+                <p class="profile-bio">Chicago-born with a creative flare, Arthea showcases skill and artistry through locs, natural styling, and sleek finishes. She loves partnering with clients to achieve the looks they envision and elevate their natural beauty.</p>
+                <div class="pill-row">
+                    <span class="pill">Loc Styles & Retwists</span>
+                    <span class="pill">Natural Hair</span>
+                    <span class="pill">Silk Press</span>
+                    <span class="pill">Braid Design</span>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align:center; margin-top:48px;">
+            <a class="btn btn-primary" href="https://www.vagaro.com/getgorgeoussalonandspa/book-now" target="_blank">Book with the Team</a>
+        </div>
     </main>
 
     <footer class="site-footer">

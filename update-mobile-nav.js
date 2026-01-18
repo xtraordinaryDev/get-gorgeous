@@ -27,7 +27,7 @@ const mobileNavHTML = `
                 <a href="stylists.html" class="mobile-nav-link">Stylist Profiles</a>
                 <a href="gallery.html" class="mobile-nav-link">Gallery</a>
                 <a href="contact.html" class="mobile-nav-link">Contact</a>
-                <a href="https://getgorgeous.fivease.com/online/bookme" class="mobile-nav-btn" target="_blank">Book an Appointment</a>
+                <a href="https://www.vagaro.com/getgorgeoussalonandspa/book-now" class="mobile-nav-btn" target="_blank">Book an Appointment</a>
             </div>
         </nav>`;
 
