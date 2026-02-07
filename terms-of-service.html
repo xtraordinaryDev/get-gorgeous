@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms of Service | Get Gorgeous</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css" />
+    <style>
+        .legal-page { padding: 80px 24px 60px; max-width: 800px; margin: 0 auto; }
+        .legal-page h1 { font-size: clamp(28px, 4vw, 36px); font-weight: 800; margin: 0 0 8px 0; color: white; }
+        .legal-page .updated { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+        .legal-page h2 { font-size: 20px; font-weight: 700; color: white; margin: 28px 0 12px 0; }
+        .legal-page p, .legal-page li { color: var(--muted); font-size: 15px; line-height: 1.7; margin: 0 0 12px 0; }
+        .legal-page ul { margin: 0 0 16px 0; padding-left: 24px; }
+        .legal-page a { color: var(--brand); }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="index.html">
+                <img src="assets/logo.png" alt="Get Gorgeous" class="brand-logo" />
+            </a>
+            <nav class="primary-nav">
+                <a href="about.html">About Us</a>
+                <div class="dropdown">
+                    <a href="services.html" class="dropdown-toggle">Services</a>
+                    <div class="dropdown-menu">
+                        <a href="services.html">Hair Services</a>
+                        <a href="hair-extensions.html">Hair Extensions</a>
+                        <a href="skin-services.html">Skin Services</a>
+                        <a href="makeup-services.html">Makeup Services</a>
+                    </div>
+                </div>
+                <a href="stylists.html">Stylist Profiles</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a class="btn btn-primary" href="https://www.vagaro.com/getgorgeoussalonandspa/book-now" target="_blank">Book an Appointment</a>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <div class="mobile-nav-content">
+                <a href="about.html" class="mobile-nav-link">About Us</a>
+                <div class="mobile-nav-section">
+                    <a href="services.html" class="mobile-nav-link mobile-nav-main">Services</a>
+                    <div class="mobile-nav-submenu">
+                        <a href="services.html" class="mobile-nav-sublink">Hair Services</a>
+                        <a href="hair-extensions.html" class="mobile-nav-sublink">Hair Extensions</a>
+                        <a href="skin-services.html" class="mobile-nav-sublink">Skin Services</a>
+                        <a href="makeup-services.html" class="mobile-nav-sublink">Makeup Services</a>
+                    </div>
+                </div>
+                <a href="stylists.html" class="mobile-nav-link">Stylist Profiles</a>
+                <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+                <a href="https://www.vagaro.com/getgorgeoussalonandspa/book-now" class="mobile-nav-btn" target="_blank">Book an Appointment</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="legal-page" style="background: #0f0f10;">
+        <h1>Terms of Service</h1>
+        <p class="updated">Last updated: January 2025</p>
+
+        <p>Welcome to Get Gorgeous Salon &amp; Spa. By using our website and services, you agree to these Terms of Service. Please read them carefully.</p>
+
+        <h2>1. Services</h2>
+        <p>We provide hair, skin, and makeup services as described on our website. Service availability, pricing, and descriptions are subject to change. Appointments are subject to our scheduling and cancellation policies.</p>
+
+        <h2>2. Appointments &amp; Cancellations</h2>
+        <p>You may book appointments through our website, phone, or third-party booking platform. We ask that you cancel or reschedule at least 24 hours in advance when possible. Repeated no-shows or late cancellations may result in a fee or restriction on future bookings.</p>
+
+        <h2>3. Payment</h2>
+        <p>Payment is due at the time of service unless otherwise agreed. We accept the payment methods displayed at the salon. Prices do not include applicable taxes unless stated.</p>
+
+        <h2>4. Liability</h2>
+        <p>We take care to provide safe, professional services. We are not liable for allergic reactions, sensitivity, or other outcomes resulting from products or services when you have not disclosed relevant health or allergy information. You use our services at your own risk to the extent permitted by law.</p>
+
+        <h2>5. Intellectual Property</h2>
+        <p>All content on this website (text, images, logos, and design) is owned by Get Gorgeous or our licensors and may not be copied or used without permission.</p>
+
+        <h2>6. Changes</h2>
+        <p>We may update these Terms of Service from time to time. Continued use of our website or services after changes constitutes acceptance of the updated terms.</p>
+
+        <h2>7. Contact</h2>
+        <p>For questions about these terms, contact us at <a href="mailto:getgorgeousmn@gmail.com">getgorgeousmn@gmail.com</a> or call (651) 291-8997.</p>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Get Gorgeous. All rights reserved. <a href="terms-of-service.html">Terms of Service</a> · <a href="privacy-policy.html">Privacy Policy</a></p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        var t = document.querySelector('.mobile-menu-toggle'), n = document.querySelector('.mobile-nav'), b = document.body;
+        if (t && n) {
+            t.addEventListener('click', function() { this.classList.toggle('active'); n.classList.toggle('active'); b.classList.toggle('menu-open'); });
+            document.querySelectorAll('.mobile-nav-link, .mobile-nav-sublink, .mobile-nav-btn').forEach(function(l) {
+                l.addEventListener('click', function() { t.classList.remove('active'); n.classList.remove('active'); b.classList.remove('menu-open'); });
+            });
+            n.addEventListener('click', function(e) { if (e.target === n) { t.classList.remove('active'); n.classList.remove('active'); b.classList.remove('menu-open'); } });
+        }
+    </script>
+</body>
+</html>

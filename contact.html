@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/main.css" />
     <style>
         .contact-main {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d1b69 50%, #ff69b4 100%);
+            background: linear-gradient(135deg, #1a1a1a 0%, #b8e0b8 50%, #ff69b4 100%);
             min-height: 100vh;
             padding: 80px 0;
         }
@@ -29,14 +29,14 @@
         .contact-header h1 {
             font-size: 3rem;
             font-weight: 800;
-            color: #fff;
+            color: #1a1a1a;
             margin-bottom: 20px;
-            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
         }
         
         .contact-header p {
             font-size: 1.2rem;
-            color: rgba(255, 255, 255, 0.8);
+            color: #2d2d2d;
             max-width: 600px;
             margin: 0 auto;
         }
@@ -49,27 +49,28 @@
         }
         
         .contact-section {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(0, 0, 0, 0.08);
             border-radius: 20px;
             padding: 40px;
             text-align: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
         }
         
         .contact-section:hover {
             transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
         
         .contact-section h2 {
             font-family: 'Dancing Script', cursive;
             font-size: 2.5rem;
             font-weight: 700;
-            color: #ff69b4;
+            color: #c71585;
             margin-bottom: 30px;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            text-shadow: none;
         }
         
         .hours-list {
@@ -79,11 +80,11 @@
         }
         
         .hours-list li {
-            color: #fff;
+            color: #1a1a1a;
             font-size: 1.1rem;
             margin-bottom: 15px;
             padding: 10px 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
         }
         
         .hours-list li:last-child {
@@ -93,14 +94,14 @@
         .phone-number {
             font-size: 2rem;
             font-weight: 700;
-            color: #ff69b4;
+            color: #c71585;
             margin: 20px 0;
             text-decoration: none;
             transition: color 0.3s ease;
         }
         
         .phone-number:hover {
-            color: #fff;
+            color: #ff69b4;
         }
         
         .contact-form {
@@ -117,7 +118,7 @@
         }
         
         .form-group label {
-            color: #fff;
+            color: #1a1a1a;
             font-weight: 600;
             margin-bottom: 8px;
             font-size: 1.1rem;
@@ -126,10 +127,10 @@
         .form-group input,
         .form-group textarea {
             padding: 15px;
-            border: 2px solid rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(0, 0, 0, 0.15);
             border-radius: 10px;
-            background: rgba(255, 255, 255, 0.1);
-            color: #fff;
+            background: #fff;
+            color: #1a1a1a;
             font-size: 1rem;
             transition: border-color 0.3s ease, background 0.3s ease;
         }
@@ -138,12 +139,12 @@
         .form-group textarea:focus {
             outline: none;
             border-color: #ff69b4;
-            background: rgba(255, 255, 255, 0.15);
+            background: #fff;
         }
         
         .form-group input::placeholder,
         .form-group textarea::placeholder {
-            color: rgba(255, 255, 255, 0.6);
+            color: #666;
         }
         
         .form-group textarea {
@@ -152,7 +153,7 @@
         }
         
         .submit-btn {
-            background: linear-gradient(135deg, #ff69b4, #00d4aa);
+            background: linear-gradient(135deg, #ff69b4, #5cb85c);
             color: #fff;
             border: none;
             padding: 15px 30px;
@@ -166,11 +167,11 @@
         
         .submit-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(255, 105, 180, 0.3);
+            box-shadow: 0 10px 20px rgba(255, 105, 180, 0.4);
         }
         
         .address {
-            color: #fff;
+            color: #1a1a1a;
             font-size: 1.2rem;
             font-weight: 600;
             margin: 20px 0;
@@ -191,7 +192,7 @@
         }
         
         .required {
-            color: #ff69b4;
+            color: #c71585;
         }
         
         @media (max-width: 768px) {
@@ -345,7 +346,7 @@
 
     <footer class="site-footer">
         <div class="container footer-inner">
-            <p>© <span id="year"></span> Get Gorgeous. All rights reserved.</p>
+            <p>© <span id="year"></span> Get Gorgeous. All rights reserved. <a href="terms-of-service.html">Terms of Service</a> · <a href="privacy-policy.html">Privacy Policy</a></p>
         </div>
     </footer>
 

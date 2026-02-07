@@ -724,6 +724,48 @@ body {
   color: rgba(255, 255, 255, 0.9);
 }
 
+/* Salon "stylist in action" vertical video */
+.salon-video-block {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.salon-video-heading {
+  font-size: clamp(20px, 2.5vw, 26px);
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 24px 0;
+  letter-spacing: 0.5px;
+}
+
+.salon-video-wrap {
+  display: inline-block;
+  max-width: 320px;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.2);
+  border: 4px solid rgba(255, 105, 180, 0.2);
+  background: #1a1a1a;
+}
+
+.salon-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: middle;
+  object-fit: cover;
+  aspect-ratio: 9 / 16;
+}
+
+.salon-video-caption {
+  font-size: 15px;
+  font-weight: 600;
+  color: #666;
+  margin: 16px 0 0 0;
+  letter-spacing: 0.3px;
+}
+
 .salon-stats {
   background: white;
   border-radius: 20px;
@@ -1166,6 +1208,18 @@ body {
   color: var(--muted);
 }
 
+.footer-bottom p a,
+.footer-inner p a {
+  color: var(--muted);
+  text-decoration: none;
+  margin: 0 4px;
+}
+
+.footer-bottom p a:hover,
+.footer-inner p a:hover {
+  color: white;
+}
+
 /* Service Tabs */
 .service-tabs {
   margin-top: 40px;
@@ -1408,6 +1462,25 @@ img { max-width: 100%; height: auto; display: block; }
 .about-intro {
   background: linear-gradient(180deg, #1a1a1a 0%, #0f0f10 100%);
   color: white;
+}
+
+.about-team-pic {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-team-pic img {
+  width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: middle;
 }
 
 .meet-team {
